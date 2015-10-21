@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Header" id="s3O-gn-SjO" customClass="HeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrQ-YK-3QB">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                    <state key="normal" title="Button 1">
+                        <color key="titleColor" red="0.098039217289999994" green="0.21960784489999999" blue="0.5411764979" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.94901961089999998" green="0.83529412749999998" blue="0.25490197539999998" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" red="0.32156862749999998" green="0.56078431370000004" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="s3O-gn-SjO" eventType="touchUpInside" id="dvx-Kc-k0C"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9N-lD-6pi">
+                    <rect key="frame" x="300" y="0.0" width="300" height="50"/>
+                    <state key="normal" title="Button 2">
+                        <color key="titleColor" red="0.1215686275" green="0.1058823529" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.77647060160000003" green="0.03529411927" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" red="1" green="0.87843137979999997" blue="0.270588249" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="s3O-gn-SjO" eventType="touchUpInside" id="bzG-sG-jzn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="xrQ-YK-3QB" firstAttribute="width" secondItem="s3O-gn-SjO" secondAttribute="width" multiplier="0.5" id="11M-sr-xuH"/>
+                <constraint firstItem="V9N-lD-6pi" firstAttribute="leading" secondItem="xrQ-YK-3QB" secondAttribute="trailing" id="GrC-27-96C"/>
+                <constraint firstAttribute="bottom" secondItem="xrQ-YK-3QB" secondAttribute="bottom" id="LiI-Hg-rnM"/>
+                <constraint firstItem="V9N-lD-6pi" firstAttribute="width" secondItem="s3O-gn-SjO" secondAttribute="width" multiplier="0.5" id="Ql4-2i-uUF"/>
+                <constraint firstAttribute="trailing" secondItem="V9N-lD-6pi" secondAttribute="trailing" id="avQ-BP-EfN"/>
+                <constraint firstItem="xrQ-YK-3QB" firstAttribute="top" secondItem="s3O-gn-SjO" secondAttribute="top" id="bIE-Py-y4n"/>
+                <constraint firstItem="V9N-lD-6pi" firstAttribute="top" secondItem="s3O-gn-SjO" secondAttribute="top" id="gjo-hJ-1qa"/>
+                <constraint firstAttribute="bottom" secondItem="V9N-lD-6pi" secondAttribute="bottom" id="jUY-A1-Fir"/>
+                <constraint firstItem="xrQ-YK-3QB" firstAttribute="leading" secondItem="s3O-gn-SjO" secondAttribute="leading" id="ylf-Fw-QeF"/>
+            </constraints>
+            <connections>
+                <outlet property="button1" destination="xrQ-YK-3QB" id="bDD-se-cYW"/>
+                <outlet property="button2" destination="V9N-lD-6pi" id="pl7-LM-Xay"/>
+            </connections>
+            <point key="canvasLocation" x="310" y="304"/>
+        </collectionReusableView>
+    </objects>
+</document>
